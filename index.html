@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TIC-TAC-TOE</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <button class="btn btnPlay">PLAY</button>
+            <div class="header">
+                <h2 class="title">TIC-TAC-TOE PVP</h2>
+                
+                <button class="btn btnRules">RULES</button>
+            </div>
+            
+            <button class="btn btnAbout">ABOUT</button>
+        </div>
+        <div class="game displayNone">
+            <p class="game__gamer-name">Player One</p>
+            <div class="game__field">
+                <div class="grid" data="1"></div>
+                <div class="grid" data="2"></div>
+                <div class="grid" data="3"></div>
+                <div class="grid" data="4"></div>
+                <div class="grid" data="5"></div>
+                <div class="grid" data="6"></div>
+                <div class="grid" data="7"></div>
+                <div class="grid" data="8"></div>
+                <div class="grid" data="9"></div>
+            </div>
+            <button class="btnMenu btn_quad">MENU</button>
+            <button class="btnReset btn_quad">RESET</button>
+        </div>
+        <div class="rules displayNone">
+            <button class="btn btnMenu">MENU</button>
+                <ul class="rules__text">
+                    <ol>
+                        <li>The game is played on a grid that's 3 squares by 3 squares.</li>
+                        <li> You are X, your friend (or the computer in this case) is O. Players take turns putting their marks in empty squares.</li>
+                        <li>The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.</li>
+                        <li>When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.</li>
+                    </ol>
+                </ul>
+        </div>
+        <div class="about displayNone">
+            <button class="btn btnMenu">MENU</button>
+            <a href="https://github.com/buzzlove" class="btn github"></a>
+            <a href="https://github.com/buzzlove" class="btn rsschool"></a>
+            <h3 class="year">2022</h3>
+        </div>
+        <div class="result  displayNone">
+            <button class="btnMenu btn">MENU</button>
+            <h2 class="result__title">...</h2>
+            <button class="btnPlay btn">PLAY</button>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

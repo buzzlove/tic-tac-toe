@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(241, 243, 224);
+  display: flex;
+  justify-content: space-around;
+}
+.container {
+  margin: auto;
+  height: 550px;
+  width: 550px;
+  border: 1px solid black;
+  border-radius: 550px;
+  background-color: rgb(184, 241, 169);
+}
+.menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  align-self: center;
+  margin-left: 50px;
+  color: rgb(58, 63, 15);
+  font-size: 35px;
+}
+.btn {
+  height: 100px;
+  width: 100px;
+  padding: 20px 0;
+  border-radius: 100px;
+  cursor: pointer;
+  background-color: rgb(241, 243, 224);
+  border: 1px solid rgb(241, 243, 224);
+  transition: 0.5s;
+}
+.btn:hover,
+.btn_quad:hover {
+  border: 1px solid rgb(15, 15, 15);
+  font-size: 25px;
+}
+.displayNone {
+  display: none !important;
+}
+.btnRules {
+  align-self: self-end;
+  margin-right: 50px;
+}
+.game,
+.about,
+.rules,
+.result {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.game__field {
+  height: 330px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 60px;
+  justify-content: center;
+  gap: 0px;
+  align-items: center;
+}
+.grid {
+  height: 110px;
+  width: 110px;
+}
+.grid:hover {
+  background-color: rgb(212, 236, 205);
+  cursor: pointer;
+}
+.grid:nth-child(2),
+.grid:nth-child(8) {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+.grid:nth-child(4),
+.grid:nth-child(6) {
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+.grid:nth-child(5) {
+  border: 2px solid black;
+}
+.round {
+  background-image: url("./assets/img/round.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.cross {
+  background-image: url("./assets/img/cross.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.btn_quad {
+  height: 50px;
+  width: 100px;
+  padding: 10px 0;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: rgb(241, 243, 224);
+  border: 1px solid rgb(241, 243, 224);
+  transition: 0.5s;
+}
+
+.github {
+  background-image: url("./assets/img/github.jpeg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.5s;
+}
+.github:hover {
+  background-size: 110%;
+}
+
+.rsschool {
+  background-image: url("./assets/img/rsschool.jpeg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.5s;
+}
+.rsschool:hover {
+  background-size: 100%;
+}
+.about {
+  flex-direction: column;
+  justify-content: space-around;
+}
+.rules {
+  justify-content: space-around;
+}
+.rules__text {
+  padding: 0 45px 90px;
+}
+.result {
+  flex-direction: column;
+  justify-content: space-around;
+}
+.game__gamer-name {
+  height: 50px;
+  width: 150px;
+  padding: 10px 0;
+  background-color: rgb(241, 243, 224);
+  border: 1px solid rgb(241, 243, 224);
+  text-align: center;
+}
